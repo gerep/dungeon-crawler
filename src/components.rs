@@ -7,6 +7,12 @@ pub struct Render {
 }
 
 #[derive(Clone, Copy, Debug, PartialEq)]
+pub struct WantsToMove {
+    pub entity: Entity,
+    pub destination: Point,
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Player;
 
 #[derive(Clone, Copy, Debug, PartialEq)]
