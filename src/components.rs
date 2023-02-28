@@ -13,6 +13,12 @@ pub struct WantsToMove {
 }
 
 #[derive(Clone, Copy, Debug, PartialEq)]
+pub struct Health {
+    pub current: i32,
+    pub max: i32,
+}
+
+#[derive(Clone, Copy, Debug, PartialEq)]
 pub struct Player;
 
 #[derive(Clone, Copy, Debug, PartialEq)]
@@ -20,3 +26,6 @@ pub struct Enemy;
 
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub struct MovingRandomly;
+
+#[derive(Clone, PartialEq)]
+pub struct Name(pub String);
